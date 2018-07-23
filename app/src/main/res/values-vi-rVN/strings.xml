@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TourNote</string>
-    <string name="empty_note">Bạn chưa có ghi chú nào cho mình, hãy tạo mới ghi chú cho mình từ hôm nay</string>
+
+    <!-- Common Action -->
+    <string name="common_action_close">Đóng</string>
+    <string name="common_action_save">Lưu</string>
+
+    <!-- Menu Item -->
+    <string name="menu_item_about_app">Về Ứng Dụng</string>
+    <string name="menu_item_help">Giúp Đỡ</string>
+    <string name="menu_item_version_app">Phiên bản %s</string>
+
+    <!-- Main Screen -->
+    <string name="mainscreen_add_category">Thêm Chủ Đề</string>
+    <string name="mainscreen_add_note">Thêm Địa Điểm</string>
+    <string name="mainscreen_edit_note">Sửa Địa Điểm</string>
+    <string name="mainscreen_empty_note">Bạn chưa có ghi chú nào cho mình, hãy tạo mới ghi chú cho mình từ hôm nay</string>
+
+    <!-- Note detail screen -->
+    <string name="note_detail_share">Chia Sẻ</string>
+    <string name="note_detail_delete">Xoá</string>
+    <string name="note_detail_category">Chủ Đề</string>
+    <string name="note_detail_note_detail">Chi Tiết Về Địa Điểm</string>
+    <string name="note_detail_other_information">Thông Tin Khác</string>
+    <string name="note_detail_map_location">Vị Trí Bản Đồ</string>
+    <string name="note_detail_note_name_hint">Tên Địa Điểm</string>
+    <string name="note_detail_note_detail_hint">Mô Tả Vể Địa Điểm</string>
+    <string name="note_detail_add_note_hint">Ghi Chú -  Có Thể Thêm Vào Sau</string>
+    <string name="note_detail_address_hint">Địa Chỉ</string>
+
 </resources>
