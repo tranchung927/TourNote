@@ -7,6 +7,7 @@
     <string name="common_action_save">Lưu</string>
 
     <!-- Menu Item -->
+    <string name="menu_item_search">Tìm kiếm</string>
     <string name="menu_item_about_app">Về Ứng Dụng</string>
     <string name="menu_item_help">Giúp Đỡ</string>
     <string name="menu_item_version_app">Phiên bản %s</string>
