@@ -12,6 +12,5 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        StartService.startActionBaz(this, "Hello", "Service")
     }
 }
