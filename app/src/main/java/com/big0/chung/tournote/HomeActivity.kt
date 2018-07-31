@@ -1,5 +1,6 @@
 package com.big0.chung.tournote
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -56,11 +57,13 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
             R.id.help -> {
-                Toast.makeText(this, "Help button selected", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ContactActivity::class.java)
+                startActivity(intent)
                 return true
             }
             R.id.about -> {
-                Toast.makeText(this, "About button selected", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ContactActivity::class.java)
+                startActivity(intent)
                 return true
             }
 
