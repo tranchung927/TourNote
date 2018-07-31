@@ -57,12 +57,12 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
             R.id.help -> {
-                val intent = Intent(this, ContactActivity::class.java)
+                val intent = Intent(this, ContactActivity::class.java).putExtra(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_HELP)
                 startActivity(intent)
                 return true
             }
             R.id.about -> {
-                val intent = Intent(this, ContactActivity::class.java)
+                val intent = Intent(this, ContactActivity::class.java).putExtra(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_ABOUT)
                 startActivity(intent)
                 return true
             }
