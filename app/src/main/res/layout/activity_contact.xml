@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactActivity">
+    tools:context=".activities.ContactActivity">
 
+    <fragment
+        android:id="@+id/contactMainFrame"
+        android:name="com.big0.chung.tournote.fragments.AboutHelpFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>

@@ -1,17 +1,18 @@
-package com.big0.chung.tournote
+package com.big0.chung.tournote.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_contact.*
+import com.big0.chung.tournote.R
+import com.big0.chung.tournote.fragments.AboutHelpFragment
+import com.big0.chung.tournote.inTransaction
 
 class ContactActivity : AppCompatActivity() {
 
     companion object {
-        final val KEY_SHOW_WHAT = "show_what"
-        final val VALUE_SHOW_ABOUT = "show_about"
-        final val VALUE_SHOW_HELP = "show_help"
+        val KEY_SHOW_WHAT = "show_what"
+        val VALUE_SHOW_ABOUT = "show_about"
+        val VALUE_SHOW_HELP = "show_help"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +20,16 @@ class ContactActivity : AppCompatActivity() {
         setContentView(R.layout.activity_contact)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayShowHomeEnabled(true)
-        val message = intent.getStringExtra(KEY_SHOW_WHAT)
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+
+        val bundle = intent.extras
+        if (bundle != null) {
+            val message = bundle.getString(KEY_SHOW_WHAT)
+            val url = if (message == VALUE_SHOW_ABOUT) "http://rezero.wikia.com/wiki/Rem"
+            else "http://rezero.wikia.com/wiki/Ram"
+            val aboutHelpFragment = AboutHelpFragment.newInstance(url)
+
+            supportFragmentManager.inTransaction { add(R.id.contactMainFrame, aboutHelpFragment) }
+        }
     }
 
     override fun onBackPressed() {

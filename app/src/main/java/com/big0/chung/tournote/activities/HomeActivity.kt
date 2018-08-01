@@ -1,4 +1,4 @@
-package com.big0.chung.tournote
+package com.big0.chung.tournote.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.big0.chung.tournote.R
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_home.*
 
@@ -57,12 +58,18 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
             R.id.help -> {
-                val intent = Intent(this, ContactActivity::class.java).putExtra(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_HELP)
+                val intent = Intent(this, ContactActivity::class.java)
+                val bundle = Bundle()
+                bundle.putString(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_HELP)
+                intent.putExtras(bundle)
                 startActivity(intent)
                 return true
             }
             R.id.about -> {
-                val intent = Intent(this, ContactActivity::class.java).putExtra(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_ABOUT)
+                val intent = Intent(this, ContactActivity::class.java)
+                val bundle = Bundle()
+                bundle.putString(ContactActivity.KEY_SHOW_WHAT, ContactActivity.VALUE_SHOW_ABOUT)
+                intent.putExtras(bundle)
                 startActivity(intent)
                 return true
             }
