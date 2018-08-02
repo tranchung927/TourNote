@@ -1,4 +1,4 @@
-package com.big0.chung.tournote
+package com.big0.chung.tournote.utilities
 
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction

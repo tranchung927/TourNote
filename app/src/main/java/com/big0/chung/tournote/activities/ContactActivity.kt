@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import com.big0.chung.tournote.R
 import com.big0.chung.tournote.fragments.AboutHelpFragment
-import com.big0.chung.tournote.inTransaction
+import com.big0.chung.tournote.utilities.inTransaction
 
 class ContactActivity : AppCompatActivity() {
 
